@@ -1,3 +1,9 @@
+:root {
+    --pri-color: #F1F1F1;
+    --sec-color: #E70000;
+    --ter-color: #C50000;
+}
+
 * {
     padding: 0;
     box-sizing: border-box;
