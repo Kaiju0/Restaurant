@@ -8,3 +8,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    
+}
+
+.nav-div {
+    background-image: url(../Images/background.jpg);
+}
+
+.nav {
+    height: 20vh;
+    width: 99vw;
+}
+
+.nav-logo {
+    width: 50px;
+}
