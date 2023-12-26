@@ -203,8 +203,8 @@ body {
 
 .menu-pizza-div {
     display: inline-block;
-    width: 65%;
-    height: 90%;
+    width: 67%;
+    height: 100%;
     background-image: url(../Images/wood-board.png);
     background-size: 50%;
     background-position: 50%;
@@ -229,3 +229,8 @@ body {
     height: 100px;
 }
 
+.menu-pizza-image {
+    margin-left: 22.5%;
+    width: 55%;
+    height: 100%;
+}
