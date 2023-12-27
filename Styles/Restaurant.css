@@ -1,6 +1,6 @@
 
 :root {
-    --pri-color: #F1F1F1;
+    --pri-color: #EEEDF2;
     --sec-color: #E70000;
     --ter-color: #FAD58C;
     --qua-color: #600101;
@@ -31,11 +31,13 @@ body {
     background-color: var(--qua-color);
     border-radius: 50px;
     background-size: 100%;
-    image-rendering: crisp-edges;
     display: flex;
+    margin-top: 2vh;
     padding-top: 2vh;
     z-index: 2;
-    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .nav-logo-div {
@@ -104,7 +106,7 @@ body {
 }
 
 .home-header {
-    margin-top: 7.8%;
+    margin-top: 15.2%;
     margin-left: 14%;
     margin-right: 14%;
     height: 115px;
@@ -113,7 +115,7 @@ body {
     font-size: 77px;
     text-shadow: 0 0 15px var(--ter-color), 0 0 5px var(--ter-color);
     cursor: default;
-    transition: 0.9s;
+    transition: 0.5s;
 }
 
 .home-header:hover {
@@ -234,3 +236,70 @@ body {
     width: 55%;
     height: 100%;
 }
+
+.about-background-div {
+    height: 80vh;
+    width: 98.5vw;
+}
+
+.about-div {
+    background-image: url(../Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: inline-block;
+    width: 75%;
+    height: 90%;
+    border-radius: 50px;
+}
+
+.about-image {
+    display: inline-block;
+    width: 20%;
+    height: 55%;
+    border-radius: 50px;
+}
+
+.about-image-1 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.about-image-2 {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.about-header {
+    font-size: 30px;
+    height: 500px;
+    width: 400px;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    vertical-align: top;
+    display: inline-block;
+    color: var(--pri-color);
+    text-shadow: 0 0 10px var(--pri-color), 0 0 15px var(--pri-color), 0 0 20px var(--pri-color);
+    transition-duration: 0.5s;
+}
+
+.about-header-span:hover {
+    text-shadow: 0 0 15px var(--pri-color);
+}
+
+.about-para-span {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 50px;
+    vertical-align: top;
+    display: inline-block;
+    color: var(--pri-color);
+    text-shadow: 0 0 15px var(--pri-color);
+}
+
+
