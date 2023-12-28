@@ -1,8 +1,33 @@
+@keyframes flicker-white {
+    0%   {text-shadow: 0 0 15px var(--pri-color), 0 0 25px var(--pri-color);}
+    49%   {text-shadow: 0 0 15px var(--pri-color), 0 0 25px var(--pri-color);}
+    50%  {text-shadow: 0 0 5px var(--pri-color);}
+    51%  {text-shadow: 0 0 15px var(--pri-color), 0 0 25px var(--pri-color);}
+    75%  {text-shadow: 0 0 5px var(--pri-color);}
+    76%  {text-shadow: 0 0 15px var(--pri-color), 0 0 25px var(--pri-color);}
+    100% {text-shadow: 0 0 15px var(--pri-color), 0 0 25px var(--pri-color);}
+  }
+
+@keyframes flicker-skin {
+    0%   {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+    49%   {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+    50%  {text-shadow: 0 0 5px var(--ter-color);}
+    51%  {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+    75%  {text-shadow: 0 0 5px var(--ter-color);}
+    76%  {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+    100% {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+  }
+  
+@keyframes home-image-appear {
+    0% {translate: 200px 0px;}
+    100% { translate: 0 0 0;}
+  }
 
 :root {
     --pri-color: #EEEDF2;
     --sec-color: #E70000;
     --ter-color: #FAD58C;
+    --ter2-color: #ffffff;
     --qua-color: #600101;
 }
 
@@ -91,6 +116,10 @@ body {
     cursor: pointer;
     font-size: 1.75vw;
     display: inline-block;
+    animation-name: flicker-white;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
     margin-left: 8px;
     margin-right: 8px;
     text-shadow: 0 0 15px var(--pri-color), 0 0 20px var(--pri-color), 0 0 10px var(--pri-color), 0 0 25px var(--pri-color);
@@ -110,19 +139,24 @@ body {
     margin-left: 14%;
     margin-right: 14%;
     height: 115px;
+    animation-name: flicker-skin;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
     text-align: center;
     color: var(--ter-color);
     font-size: 77px;
-    text-shadow: 0 0 15px var(--ter-color), 0 0 5px var(--ter-color);
+    text-shadow: 0 0 15px var(--ter-color), 0 0 20px var(--ter-color);
     cursor: default;
-    transition: 0.5s;
 }
 
 .home-header:hover {
-    text-shadow: 0 0 5px var(--ter-color), 0 0 5px var(--ter-color);   
+    text-shadow: 0 0 5px var(--ter-color);   
 }
 
 .home-image {
+    animation-name: home-image-appear;
+    animation-duration: 2s;
     margin-left: 26%;
     width: 50%;
 }
@@ -320,10 +354,45 @@ body {
 }
 
 .contact-header {
+    font-size: 30px;
     font-family:'Courier New', Courier, monospace;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     font-weight: 900;
     color: var(--ter-color);
     text-shadow: 0 0 15px var(--ter-color);
+}
+
+.contact-mail {
+    font-family:'Courier New', Courier, monospace;
+    padding-top: 120px;
+    font-weight: 900;
+    color: var(--ter-color);
+    text-shadow: 0 0 15px var(--ter-color);
+}
+
+.contact-phone {
+    font-family:'Courier New', Courier, monospace;
+    text-align: right;
+    padding-top: 120px;
+    margin-left: 55%;
+    font-weight: 900;
+    color: var(--ter-color);
+    
+    text-shadow: 0 0 15px var(--ter-color);
+}
+
+.contact-image {
+    width: 50px;
+}
+
+.contact-mail-image {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.contact-phone-image {
+    vertical-align: middle;
+    margin-left: 10px;
 }
