@@ -13,8 +13,8 @@
     49%   {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
     50%  {text-shadow: 0 0 5px var(--ter-color);}
     51%  {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
-    75%  {text-shadow: 0 0 5px var(--ter-color);}
-    76%  {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
+    75%  {text-shadow: 0 0 10px var(--ter-color);}
+    85%  {text-shadow: 0 0 15px var(--ter-color);}
     100% {text-shadow: 0 0 15px var(--ter-color), 0 0 25px var(--ter-color);}
   }
   
